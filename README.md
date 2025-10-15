@@ -6,8 +6,8 @@ Big-B（5-card Badugi & 5-card Hidugi）の1回ドロー後の到達役確率を
 
 本プロジェクトは、Vibe-Codingで作成されています
 
-- [docs/](./docs/)
-- [ChatGPTとの対話](https://chatgpt.com/share/e/68efcf2e-7050-8007-8a9e-3c07071fa6fc)
+- [使用したプロンプト](./docs/)
+- [ChatGPTとの対話（要アカウント）](https://chatgpt.com/share/e/68efcf2e-7050-8007-8a9e-3c07071fa6fc)
 
 ## 必要な環境
 
