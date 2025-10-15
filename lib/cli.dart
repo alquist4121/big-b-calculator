@@ -12,6 +12,7 @@ import 'hand_eval_hidugi.dart';
 class CliProcessor {
   CliProcessor() : parser = _createParser();
   final ArgParser parser;
+  int _currentDrawCount = 0;
 
   static ArgParser _createParser() {
     final parser = ArgParser();
@@ -72,6 +73,9 @@ class CliProcessor {
 
       // 残りデッキを作成
       final remainingDeck = _createRemainingDeck(hand, discardCards);
+
+      // ドロー数を設定
+      _currentDrawCount = discardCards.length;
 
       // 計算実行
       final result = _calculateProbabilities(hand, discardCards, remainingDeck);
@@ -259,10 +263,9 @@ class CliProcessor {
     };
   }
 
-  /// ドロー数を取得（簡易実装）
+  /// ドロー数を取得
   int _getDrawCount() {
-    // 実際の実装では、引数から取得する必要がある
-    return 2; // デフォルト値
+    return _currentDrawCount;
   }
 
   /// JSON出力
