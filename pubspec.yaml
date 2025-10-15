@@ -1,0 +1,21 @@
+name: poker_calculator
+description: ポーカーの特定のルールの計算機用コマンドラインツール
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.35.3"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  args: ^2.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  test: ^1.24.0
+  lints: ^3.0.0
+
+executables:
+  poker-calculator: poker_calculator
